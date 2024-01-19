@@ -44,11 +44,11 @@
 
       i {
         transition: all 0.3s ease-out;
+
       }
 
       &:hover {
         color: #001283;
-
         svg {
           opacity: 0;
         }
@@ -60,7 +60,7 @@
 
       &:after {
         content: '';
-        font-size: 9px;
+        font-size: 10px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -158,10 +158,12 @@
 
 @media screen and (max-width: 1200px) {
   .nav-bar { 
-    background: transparent;
-    position: initial;
-    height: auto;
-    min-height: auto;
+    background: linear-gradient(to bottom, rgb(253, 237, 65) ,rgb(255, 255, 197));
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    min-height: 500px;
 
      ul, nav {
       display: none;
@@ -171,20 +173,22 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: #181818;
+      background: #000a4d;
       height: 100%;
       margin: 0;
       z-index: 2;
       position: fixed;
 
-      &.mobile-show {
+      &.mobile-button {
         display: block;
       }
 
       a {
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
+        color: white;
+        text-align: left;
       }
 
       a:after {
@@ -196,12 +200,13 @@
 
       a svg {
         opacity: 1 !important;
+        color:rgb(251, 255, 175)
       }
      }
 
      .hamburger-icon,
      .close-icon {
-        position: absolute;
+        position: fixed;
         top: 15px;
         right: 15px;
         display: block;

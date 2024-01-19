@@ -4,6 +4,7 @@ import Logo from "./logo-s.png"
 import name from "./0000.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { useState } from 'react'
 import {
     faLinkedin,
     faGithub,
@@ -14,33 +15,46 @@ import {
     faEnvelope,
     faSuitcase,
     faFile,
+    faBars,
+    faClose,
   } from '@fortawesome/free-solid-svg-icons'
+
 function Sidebar() {
+    const [button, showbutton]=useState(false);
+
   return (
 
+
 <div className='nav-bar'>
-<Link className="logo" to="/">
+<Link className="logo" to="/" onClick={()=>showbutton(false)}>
         <img src={Logo} alt="Logo" />
         <img className="sub-logo" src={name} alt="myName" />
 
       </Link>
 
-<nav className='navigator'>
-    <div className='nav-items'>
-    <NavLink exact="true" activeclassname="active" to="/">
+<nav className={button ? 'mobile-button':''}>
+  
+    <NavLink exact="true" activeclassname="active" to="/" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faHome} color="#001283" />
     </NavLink>
-    <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume">
+    <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faFile} color="#001283" />
     </NavLink>
-    <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
+    <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faSuitcase} color="#001283" />
     </NavLink>
-    <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+    <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faEnvelope} color="#001283" />
     </NavLink>
-    </div>
+    <FontAwesomeIcon 
+          onClick={() => showbutton(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className='close-icon' />
 </nav>
+
+
 <ul>
     <li>
         <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/saad-amawi-854bb626a/' className='linked'>
@@ -55,7 +69,12 @@ function Sidebar() {
     </li>
 </ul>
 
-
+<FontAwesomeIcon 
+          onClick={() => showbutton(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
 </div>
    
      
