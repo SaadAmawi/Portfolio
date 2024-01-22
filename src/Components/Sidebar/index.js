@@ -8,7 +8,6 @@ import { useState } from 'react'
 import {
     faLinkedin,
     faGithub,
-    faInstagram,
   } from '@fortawesome/free-brands-svg-icons'
 import {
     faHome,
@@ -35,16 +34,16 @@ function Sidebar() {
 <nav className={button ? 'mobile-button':''}>
   
     <NavLink exact="true" activeclassname="active" to="/" onClick={()=>showbutton(false)}>
-    <FontAwesomeIcon icon={faHome} color="#001283" />
+    <FontAwesomeIcon icon={faHome} color="black" />
     </NavLink>
     <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume" onClick={()=>showbutton(false)}>
-    <FontAwesomeIcon icon={faFile} color="#001283" />
+    <FontAwesomeIcon icon={faFile} color="black" />
     </NavLink>
     <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" onClick={()=>showbutton(false)}>
-    <FontAwesomeIcon icon={faSuitcase} color="#001283" />
+    <FontAwesomeIcon icon={faSuitcase} color="black" />
     </NavLink>
     <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={()=>showbutton(false)}>
-    <FontAwesomeIcon icon={faEnvelope} color="#001283" />
+    <FontAwesomeIcon icon={faEnvelope} color="black" />
     </NavLink>
     <FontAwesomeIcon 
           onClick={() => showbutton(false)}
@@ -63,9 +62,9 @@ function Sidebar() {
         <a target="_blank" rel='noreferrer' href='https://github.com/SaadAmawi' className='git'>
             <FontAwesomeIcon icon={faGithub} color="#4d4d4de"/>
         </a>
-        <a target="_blank" rel='noreferrer' href='https://www.instagram.com/saad.a_a2/' className='insta'>
+        {/* <a target="_blank" rel='noreferrer' href='https://www.instagram.com/saad.a_a2/' className='insta'>
             <FontAwesomeIcon icon={faInstagram} color="#4d4d4de"/>
-        </a>
+        </a> */}
     </li>
 </ul>
 

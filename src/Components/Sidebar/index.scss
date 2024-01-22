@@ -1,5 +1,6 @@
 .nav-bar {
-  background: linear-gradient(to bottom, rgb(253, 237, 65) ,rgb(255, 255, 197));
+  background:  rgb(251, 233, 41);
+  // background: linear-gradient(to bottom, rgb(253, 237, 65) ,rgb(255, 255, 197));
   width: 80px;
   height: 100%;
   position: absolute;
@@ -43,7 +44,7 @@
       text-decoration: none;
 
       i {
-        transition: all 0.3s ease-out;
+        transition: all 0.3s ease-in;
 
       }
 
@@ -69,7 +70,7 @@
         text-align: center;
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+        transition: all 0.1s ease-in;
       }
 
       &:first-child {
@@ -99,7 +100,7 @@
 
     a.active {
       svg {
-        color: #7f8100;
+        color: #00000073;
       }
     }
   }

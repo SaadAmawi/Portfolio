@@ -1,7 +1,8 @@
 .text-animate{
     display: inline-block;
     opacity: 1;
-    animation: zoomInDown 1.3s 1s;
+    animation: fadeIn 1.3s 1s;
+    // animation: zoomInDown 1.3s 1s;
     animation-fill-mode: backwards;
     min-width: 10px;
 }
@@ -16,7 +17,7 @@
     }
 }
 
-@for $i from 1 through 46{
+@for $i from 1 through 50{
     .text-animate._#{$i} {
         animation-delay: #{calc($i/10)}s;
     }
