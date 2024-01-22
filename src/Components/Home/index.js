@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
-import Logo from "../../Components/Sidebar/logo-s.png"
+import Logos from "../../Components/Sidebar/logo-s.png"
 import { Link } from 'react-router-dom'
 import './index.scss'
+import Logo from './Logo'
+
 import AnimatedLetters from '../AnimatedLetters'
 
 function Home() {
@@ -28,15 +30,16 @@ function Home() {
         <span className={`${letterClass} _15`} >o, </span>
         <br/> 
         <span className={`${letterClass} _16`} >I </span>
-        <span className={`${letterClass} _17`} >'m </span>
-      <img src={Logo} alt="s"/>
+        <span className={`${letterClass} _17`} >' </span>
+        <span className={`${letterClass} _18`} >m </span>
+      <img src={Logos} alt="s"/>
       <AnimatedLetters letterClass={letterClass}
       strArray={nameArray}
-      idx={18}/>
+      idx={19}/>
       <br/>
       <AnimatedLetters letterClass={letterClass}
       strArray={jobArray}
-      idx={28}/>
+      idx={29}/>
       
      
       </h1>
@@ -44,6 +47,7 @@ function Home() {
       <Link to="/contact" className='flat-button'>Contact Me!</Link>
 
     </div>
+    <Logo />
     </div>
     
   )
