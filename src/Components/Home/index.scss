@@ -28,7 +28,7 @@
         }
 
         &::after{
-            content: '<h1>';
+            content: '</h1>';
             font-family: 'La Belle Aurore';
             color: yellow;
             font-size: 18px;
@@ -82,3 +82,53 @@ h2{
     }
 }
 }
+@media screen and (max-width: 1200px) {
+    .home-page {
+        .text-zone {
+        // position:flex;
+        // justify-content: center;
+        // align-content: center;
+        // align-items: center;
+        margin-left:-5%;
+        margin-top: 65%;
+        vertical-align:bottom;
+        //   transform: translateY(-50%);
+          width: auto;
+          max-height: 90%;
+        }
+        h1{
+            vertical-align: middle;
+            color:white;
+            font-size: 35px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 350;
+            transition: fadeIn 0.5s backwards;
+            
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: yellow;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -20px;
+                left:0px;
+                opacity: 0.6;
+            }
+    
+            &::after{
+               
+                font-family: 'La Belle Aurore';
+                color: yellow;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 50px;
+                opacity: 0.6;
+                margin-left: -20px;
+                
+            }}
+            h2{
+                font-size: 12px;
+            }
+    
+}}
