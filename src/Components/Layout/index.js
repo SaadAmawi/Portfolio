@@ -3,6 +3,12 @@ import Sidebar from '../Sidebar'
 import { Outlet } from 'react-router-dom'
 import './index.scss'
 import Home from '../Home'
+import pdf from './Saad Amawi Resume.pdf'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faFile,
+} from '@fortawesome/free-solid-svg-icons'
 
 
 function Layout (){
@@ -13,6 +19,9 @@ function Layout (){
     
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
+        <Link to={pdf} className='resume-button' target='_blank'> <FontAwesomeIcon className='lol' icon={faFile} />
+        <h3 className='on-hover'><FontAwesomeIcon icon={faFile} color="yellow" /> Resume</h3></Link>
+
         <Home/>
         <Outlet />
         <span className="tags bottom-tags">

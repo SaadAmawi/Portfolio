@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import Logo from './Logo'
 
+
 import AnimatedLetters from '../AnimatedLetters'
 
 function Home() {

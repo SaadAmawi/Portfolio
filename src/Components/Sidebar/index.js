@@ -13,7 +13,6 @@ import {
     faHome,
     faEnvelope,
     faSuitcase,
-    faFile,
     faBars,
     faClose,
   } from '@fortawesome/free-solid-svg-icons'
@@ -36,9 +35,9 @@ function Sidebar() {
     <NavLink exact="true" activeclassname="active" to="/" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faHome} color="black" />
     </NavLink>
-    <NavLink exact="true" activeclassname="active" className="resume-link" to="/resume" onClick={()=>showbutton(false)}>
+    {/* <NavLink exact="true" activeclassname="active" className="resume-link" to={pdf} target='_blank' onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faFile} color="black" />
-    </NavLink>
+    </NavLink> */}
     <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faSuitcase} color="black" />
     </NavLink>
