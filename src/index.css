@@ -8,7 +8,8 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000a4d;
+  /* background: #000734; */
+  background: black;
   overflow: hidden;
   display: block;
 }
