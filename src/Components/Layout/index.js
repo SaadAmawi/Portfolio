@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFile,
+  faUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -20,7 +21,9 @@ function Layout (){
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
         <Link to={pdf} className='resume-button' target='_blank'> <FontAwesomeIcon className='lol' icon={faFile} />
-        <h3 className='on-hover'><FontAwesomeIcon icon={faFile} color="yellow" /> Resume</h3></Link>
+        <h3 className='on-hover'>
+          <FontAwesomeIcon icon={faUpRightFromSquare}  />&nbsp; 
+          Resume</h3></Link>
 
         <Home/>
         <Outlet />

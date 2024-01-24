@@ -21,7 +21,7 @@
   text-decoration: none;
   padding:10px 22px;
   animation:  wobble 2s infinite ;
-  transition: color 3s;
+  
   
   
   border-radius: 20px;
@@ -35,7 +35,7 @@
     border:none;
     color: black;
     transition: ease-in-out 1s 0.3s;
-    // animation: rubberBand 0.75s;
+    animation: fadeIn 0.75s;
 
    .on-hover{
     opacity: 1;
@@ -56,9 +56,9 @@
    .lol{
     display: none;
    }
-  svg{
+  svg:hover{
       color:black;
-      transition: ease-in-out 0.5s 1s;
+      transition: ease-in-out 1s 0.3s;
   }
 
   }
