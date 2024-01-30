@@ -3,7 +3,13 @@ import './index.scss'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import Logo from './Logo'
-
+import pdf from './Saad Amawi Resume.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Loader from 'react-loaders'
+import {
+  faFile,
+  faUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons'
 
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -19,6 +25,7 @@ function Home() {
   }, [])
 
   return (
+    <>
     <div className='container home-page'>
     <div className='text-zone'>
       <h1>
@@ -47,11 +54,15 @@ function Home() {
       </h1>
       <h2>Frontend Enthusiast | Cloud Practitioner | VR Developer</h2>
       <Link to="/contact" className='flat-button'>Contact Me!</Link>
-
+      <Link to={pdf} className='resume-button' target='_blank'> <FontAwesomeIcon className='lol' icon={faFile} />
+        <h3 className='on-hover'>
+           <FontAwesomeIcon icon={faUpRightFromSquare}  />&nbsp; 
+           Resume</h3></Link>
     </div>
     <Logo />
     </div>
-    
+    <Loader type="ball-clip-rotate-multiple"/>
+    </>
   )
 }
 
