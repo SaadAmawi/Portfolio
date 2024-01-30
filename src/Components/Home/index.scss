@@ -60,7 +60,7 @@ h2{
     animation: fadeIn 1s 5.5s backwards;
 }
 .flat-button{
-    color:yellow;
+    color:#ffd700;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -75,12 +75,96 @@ h2{
 
     &:hover{
         transition: ease-out .8s;
-        background-color: rgb(249, 237, 104);
+        background-color: #ffd700;
         color: #000a4d;
         transform:scale(1.05) ;
 
     }
 }
+
+}
+.lol{color:#ffd700}
+.resume-button{
+ 
+  position: absolute;
+  left:0px;
+  top: 335px;
+  z-index: 3;
+  width: fit-content;
+  color: transparent;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  border: 1.5px solid #ffd700;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding:10px 22px;
+  animation:  fadeIn 1.5s 6s backwards ;
+  
+  
+  
+  border-radius: 20px;
+ &::after{
+  
+  animation-play-state: paused;
+ }
+  &:hover{
+    animation: none;
+    // background-color: #ffd700;
+    border:none;
+    color: black;
+    transition: ease-in-out 1s 0.3s;
+    animation: fadeIn 0.75s;
+
+   .on-hover{
+    opacity: 1;
+    display: inline-block;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0;
+    letter-spacing: 2px;
+    
+    
+   }
+   .on-hover:hover:before,.on-hover:focus:before{
+    transform: scaleX(1);
+    transition: 1s ease-out;
+   
+    
+   }
+   .lol{
+    display: none;
+   }
+  svg:hover{
+      color:black;
+      transition: ease-in-out 1s 0.3s;
+  }
+
+  }
+
+  .on-hover{
+    display: none;
+    
+  }
+  .on-hover::before{
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border: 1px solid #ffd700;
+    background-color: #ffd700;
+    z-index: -1;
+    border-radius: 20px;
+    transform: scaleX(0.4);
+    transform-origin: left;
+    transition: transform 300ms all;
+    
+  }
 
 }
 @media screen and (max-width: 1200px) {
