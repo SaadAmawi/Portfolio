@@ -10,8 +10,9 @@
 
     h1{
         color:white;
-        font-size: 53px;
+        font-size: 70px;
         margin: 0;
+        letter-spacing: 2px;
         font-family: 'Coolvetica';
         font-weight: 350;
         transition: fadeIn 0.5s backwards;
@@ -83,12 +84,13 @@ h2{
 }
 
 }
-.lol{color:#ffd700}
+.lol{color:#ffd700;
+}
 .resume-button{
  
   position: absolute;
   left:0px;
-  top: 335px;
+  top: 408px;
   z-index: 3;
   width: fit-content;
   color: transparent;
@@ -100,14 +102,12 @@ h2{
   text-decoration: none;
   padding:10px 22px;
   animation:  fadeIn 1.5s 6s backwards ;
+
   
   
   
   border-radius: 20px;
- &::after{
-  
-  animation-play-state: paused;
- }
+ 
   &:hover{
     animation: none;
     // background-color: #ffd700;
@@ -125,18 +125,21 @@ h2{
     padding-left: 12px;
     padding-right: 12px;
     margin: 0;
+
     letter-spacing: 2px;
+    
     
     
    }
    .on-hover:hover:before,.on-hover:focus:before{
     transform: scaleX(1);
-    transition: 1s ease-out;
+    // transition: 1s ease-out;
    
     
    }
    .lol{
     display: none;
+
    }
   svg:hover{
       color:black;
@@ -146,10 +149,11 @@ h2{
   }
 
   .on-hover{
-    display: none;
-    
-  }
-  .on-hover::before{
+    display: none; 
+}
+
+.on-hover::before{
+      transition: 1s ease-in-out;
     content: '';
     top: 0;
     right: 0;

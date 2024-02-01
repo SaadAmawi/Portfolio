@@ -3,7 +3,7 @@ import './index.scss'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import Logo from './Logo'
-import pdf from './Saad Amawi Resume.pdf'
+import pdf from './Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 import {
@@ -59,7 +59,7 @@ function Home() {
            <FontAwesomeIcon icon={faUpRightFromSquare}  />&nbsp; 
            Resume</h3></Link>
     </div>
-    <Logo />
+    {/* <Logo /> */}
     </div>
     <Loader type="ball-clip-rotate-multiple"/>
     </>

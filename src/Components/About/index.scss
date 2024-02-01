@@ -7,6 +7,7 @@
     position: absolute;
     right: 0;
     overflow: hidden;
+    animation: fadeInDownBig 1s 3.8s backwards;
   }
   
   .cubespinner {
@@ -15,15 +16,15 @@
     animation-iteration-count: infinite;
     animation-duration: 12s;
     transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
+    transform-origin: 150px 150px 0;
     margin-left: calc(50% - 100px);
   
     div {
       position: absolute;
-      width: 240px;
-      height: 240px;
+      width: 300px;
+      height: 300px;
       border: 1px solid #ffffff;
-      background: rgba(255, 251, 136, 0.67);
+      background: rgba(255, 255, 255, 0.316);
       text-align: center;
       font-size: 100px;
       display: flex;
@@ -33,36 +34,36 @@
     }
   
     .face1 {
-      transform: translateZ(120px);
+      transform: translateZ(150px);
       color: #710000;
     //   background-color: rgb(232, 232, 78);
     }
     .face2 {
-      transform: rotateY(90deg) translateZ(120px);
+      transform: rotateY(90deg) translateZ(150px);
       color: #61dbfb;
     //   background-color: rgb(232, 232, 78);
 
     }
     .face3 {
-      transform: rotateY(90deg) rotateX(90deg) translateZ(120px);
+      transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
       color: black;
     //   background-color: rgb(232, 232, 78);
 
     }
     .face4 {
-      transform: rotateY(180deg) rotateZ(90deg) translateZ(120px);
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
       color: #5f5f5f;
     //   background-color: rgb(232, 232, 78);
 
     }
     .face5 {
-      transform: rotateY(-90deg) rotateZ(90deg) translateZ(120px);
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
       color: #010c8e;
     //   background-color: rgb(232, 232, 78);
 
     }
     .face6 {
-      transform: rotateX(-90deg) translateZ(120px);
+      transform: rotateX(-90deg) translateZ(150px);
       color: #ec4d28;
     //   background-color: rgb(232, 232, 78);
 

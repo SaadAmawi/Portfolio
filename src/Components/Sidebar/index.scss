@@ -70,7 +70,7 @@
         text-align: center;
         opacity: 0;
         -webkit-transition: all 0.3s ease-out;
-        transition: all 0.1s ease-in;
+        transition: all 0.3s ease-out;
       }
 
       &:first-child {
@@ -89,6 +89,12 @@
     a.projects-link {
       &:after {
         content: 'ABOUT';
+      }
+    }
+
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
       }
     }
 
