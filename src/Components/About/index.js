@@ -4,7 +4,10 @@ import './index.scss'
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faAws, faGitAlt, faJava, faPython, faReact, faUnity } from '@fortawesome/free-brands-svg-icons'
+
+
 function About() {
+  
     const [letterClass, setLetterClass]=useState('text-animate')
     useEffect(() => {
         setTimeout(() => {
@@ -50,7 +53,7 @@ function About() {
             </div>
         </div>
       </div>
-    </div>
+      </div>
     <Loader type="ball-clip-rotate-multiple"/>
     </>
   )

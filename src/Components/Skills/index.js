@@ -34,7 +34,8 @@ function Skills() {
             idx={15}
             />
         </h1>
-      
+        </div>
+      <div className='projects'>
         <div className='MemorEyez'>
             <h2>MemorEyez</h2>
             <p className='para'>A Smart Secure Virtual Reality
@@ -64,7 +65,8 @@ function Skills() {
         </Link>
         
         </div>
-    </div>
+        </div>
+    
     <div className='sphere'>
      <TextSphere/>
      </div>

@@ -2,7 +2,7 @@
     width: 50%;
     height: 100%;
     top: 0;
-    padding-top: 18%;
+    padding-top: 16%;
     margin-left: 0;
     position: absolute;
     right: 0;
@@ -90,4 +90,72 @@
     83% {
       transform: rotateX(90deg);
     }
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    .stage-cube-cont {
+      width: 70%;
+      height: 170%;
+      position: absolute;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+      left:0%;
+      overflow: hidden;
+      animation: fadeInDownBig 1s 3.8s backwards;
+      top: 0;
+    }
+    .cubespinner {
+      transform-origin: 50px 50px 0;    
+      div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ffffff;
+        background: rgba(255, 255, 255, 0.316);
+        text-align: center;
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+      }
+      .face1 {
+        transform: translateZ(50px);
+        color: #710000;
+    //   background-color: rgb(232, 232, 78);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(50px);
+      color: #61dbfb;
+    //   background-color: rgb(232, 232, 78);
+
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+      color: black;
+      //   background-color: rgb(232, 232, 78);
+      
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+      color: #5f5f5f;
+      //   background-color: rgb(232, 232, 78);
+
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+      color: #010c8e;
+    //   background-color: rgb(232, 232, 78);
+
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(50px);
+      color: #ec4d28;
+      //   background-color: rgb(232, 232, 78);
+      
+    }
+  }
+    
   }
