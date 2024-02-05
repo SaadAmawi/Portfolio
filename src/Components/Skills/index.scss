@@ -1,0 +1,327 @@
+.sphere{
+    width: 100%;
+    height: 100%;
+    top: -40px;
+    position: absolute;
+    right: 20px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+.move{width: 500px;
+height: 250px;
+&:hover{
+.website{
+   transform: translateX(5%);
+}
+.apps{
+   transform: translateX(-5%);
+     
+}
+}}
+
+  .MemorEyez{
+     position: absolute;
+     left:10%;
+     top: 15%;
+     max-width: 500px;
+     height: 350px;
+     font-size: 22px;
+     color: white;
+     font-family: "La Belle Aurore", cursive;
+     animation: fadeIn 2s 3s backwards;
+     h2{
+    font-weight: 500;
+   padding: 0px;
+   margin-bottom: -10px;
+   margin-top: -10px;
+   text-align: center;
+   animation: fadeIn 2s 3s backwards;
+
+}
+  
+.website{
+    position: absolute;
+    top:100px;
+    right:20px;
+    animation: fadeInRight 1.5s 3.5s backwards;
+    transition: all 0.8s ease-out;
+  
+   
+}
+  
+.apps{
+    position: absolute;
+    bottom:10px;
+    left:-20px;
+    animation: fadeInLeft 1s 3.5s backwards;
+    transition: all 0.8s ease-out;
+
+  }
+  }
+
+.Uhealth{
+    animation: fadeIn 2s 4.5s backwards;
+    position: absolute;
+     left:10%;
+     top: 55%;
+    max-width: 500px;
+    height: 350px;
+    font-size: 22px;
+    color: white;
+    font-family: "La Belle Aurore", cursive;
+    h2{
+     font-weight: 400;
+    padding: 0px;
+    margin-bottom: -10px;
+    text-align: center;
+    animation: fadeIn 2s 3s backwards;
+ 
+ }
+ .imgs{
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   &:hover{
+      .uhealth1{
+         transform: translateX(-20%);
+      }
+      .uhealth2{
+         transform: translateX(-6%);
+      }
+      .uhealth3{
+         transform: translateX(6%);
+      }
+      .uhealth4{
+         transform: translateX(20%);
+      }
+   }
+   
+}
+.uhealth1{
+   border-radius: 12px;
+   animation: fadeInLeft 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+}
+.uhealth2{
+   border-radius: 12px;
+   animation: fadeInUp 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+}
+.uhealth3{
+   border-radius: 12px;
+   animation: fadeInUp 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+}
+.uhealth4{
+   border-radius: 12px;
+   animation: fadeInRight 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+ }
+}
+
+@media screen and (max-width: 1300px) {
+   .sphere{
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      position: absolute;
+      right: 0px;
+      overflow: hidden;
+      z-index: -1;
+    }
+   .move{width: 100%;
+      height: 100px;
+      display: flex;
+      // background-color: wheat;
+      
+      &:hover{
+      .website{
+         transform: none;
+      }
+      .apps{
+         transform: none;
+      }
+   }}
+   .MemorEyez{
+      font-size: 20px;
+      margin-top: 20px;
+   }
+   .website{
+      display: flex;
+      position: relative;
+      width: 200px;
+      height: 100px;
+      margin-right: 20px;
+      animation: fadeInRight 1.5s 3.5s backwards;
+      transition: all 0.8s ease-out;
+    
+     
+   }
+   .apps{
+      position: relative;
+    display: flex;
+      margin-left:10%;
+      width: 200px;
+      top:28%;
+      float: left;
+      height: 100px;
+      animation: fadeInRight 1.5s 3.5s backwards;
+      transition: all 0.8s ease-out;
+   
+    }
+    .Uhealth{
+      top:270px
+    }
+  .uhealth1{
+   height: 100px;
+  } 
+  .uhealth2{
+   height: 100px;
+  } 
+  .uhealth3{
+   height: 100px;
+  } 
+  .uhealth4{
+   height: 100px;
+  } 
+
+}
+
+@media screen and (max-width: 900px) {
+   
+   .projects{
+      
+      // background-color: wheat;
+      width: 80% ;
+      height: 100%;
+   }
+   .sphere{
+      width: 0%;
+      height: 0%;
+       }
+    .move{width: 100%;
+      height: 100px;
+      display: flex;
+      
+      &:hover{
+      .website{
+         transform: none;
+      }
+      .apps{
+         transform: none;
+      }
+   }}
+    .MemorEyez{
+       display: block;
+       position: flex;
+       width: fit-content;
+       height: 350px;
+       font-size: 22px;
+       color: white;
+       font-family: "La Belle Aurore", cursive;
+       animation: fadeIn 2s 3s backwards;
+       padding-top: 12%;
+       left: -17px;
+      
+      h2{
+         padding: 0px;
+         margin-bottom: -10px;
+         margin-top: -10px;
+         text-align: center;
+         animation: fadeIn 2s 3s backwards;
+         font-weight: 500;
+ 
+ }
+   
+.website{
+   position: relative;
+   display: block;
+   top:0;
+   left: -60px;
+   width: 200px;
+   height: 114px;
+   animation: fadeInRight 1.5s 3.5s backwards;
+   transition: all 0.8s ease-out;
+ 
+  
+}
+.apps{
+   position: relative;
+   width: 200px;
+   left: 20px;
+   top:30px;
+   animation: fadeInLeft 1s 3.5s backwards;
+   transition: all 0.8s ease-out;
+
+ }
+}
+.Uhealth{
+   position:relative;
+   display: block;
+   width: fit-content;
+   height: 350px;
+   top: 150px;
+   color: white;
+   font-size: 22px;
+   color: white;
+   font-family: "La Belle Aurore", cursive;
+   h2{
+      font-weight: 400;
+      margin-bottom: -10px;
+      text-align: center;
+      animation: fadeIn 2s 3s backwards;
+      padding: 0px;
+
+   }
+.imgs{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   &:hover{
+      .uhealth1{
+        transform: translateX(0%);
+      }
+      .uhealth2{
+        transform: translateX(0%);
+      }
+      .uhealth3{
+         transform: translateX(0%);
+      }
+      .uhealth4{
+         transform: translateX(0%);
+      }
+   }
+   
+}
+.uhealth1{
+   border-radius: 12px;
+   height: 150px;
+   animation: fadeInLeft 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+}
+.uhealth2{
+   height: 150px;
+   animation: fadeInUp 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+}
+.uhealth3{
+   border-radius: 12px;
+   height: 150px;
+   animation: fadeInUp 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+}
+.uhealth4{
+   border-radius: 12px;
+   height: 150px;
+   animation: fadeInRight 1s 5s backwards;
+   transition: all 0.8s ease-in-out;
+   
+ }
+}
+}

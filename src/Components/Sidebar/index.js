@@ -5,6 +5,8 @@ import name from "./0000.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 import { useState } from 'react'
+import pdf from './Resume.pdf'
+
 import {
     faLinkedin,
     faGithub,
@@ -15,6 +17,8 @@ import {
     faUser,
     faBars,
     faClose,
+    faGears,
+    faUpRightFromSquare,
   } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar() {
@@ -35,14 +39,17 @@ function Sidebar() {
     <NavLink exact="true" activeclassname="active" to="/" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faHome} color="black" />
     </NavLink>
-    {/* <NavLink exact="true" activeclassname="active" className="resume-link" to={pdf} target='_blank' onClick={()=>showbutton(false)}>
-    <FontAwesomeIcon icon={faFile} color="black" />
-    </NavLink> */}
     <NavLink exact="true" activeclassname="active" className="projects-link" to="/about" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faUser} color="black" />
     </NavLink>
+    <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills" onClick={()=>showbutton(false)}>
+    <FontAwesomeIcon icon={faGears} color="black" />
+    </NavLink>
     <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={()=>showbutton(false)}>
     <FontAwesomeIcon icon={faEnvelope} color="black" />
+    </NavLink>
+    <NavLink exact="true" activeclassname="active" className="resume-link" to={pdf} target='_blank' onClick={()=>showbutton(false)}>
+    <FontAwesomeIcon icon={faUpRightFromSquare} color="black" />
     </NavLink>
     <FontAwesomeIcon 
           onClick={() => showbutton(false)}

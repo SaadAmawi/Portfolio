@@ -3,9 +3,11 @@ import './index.scss'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import Logo from './Logo'
-import pdf from './Saad Amawi Resume.pdf'
+import pdf from './Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
+import LogoS from './me1.png'
+
 import {
   faFile,
   faUpRightFromSquare,
@@ -53,13 +55,27 @@ function Home() {
      
       </h1>
       <h2>Frontend Enthusiast | Cloud Practitioner | VR Developer</h2>
+
+      <div className='buttons'>
       <Link to="/contact" className='flat-button'>Contact Me!</Link>
-      <Link to={pdf} className='resume-button' target='_blank'> <FontAwesomeIcon className='lol' icon={faFile} />
-        <h3 className='on-hover'>
-           <FontAwesomeIcon icon={faUpRightFromSquare}  />&nbsp; 
-           Resume</h3></Link>
+
+      <Link to={pdf} className='resume-button' target='_blank'> 
+      <FontAwesomeIcon className='lol' icon={faFile} />
+      Resume
+        {/* <h3 className='on-hover'>
+           <FontAwesomeIcon icon={faUpRightFromSquare}  />&nbsp;Resume</h3> */}
+           </Link>
+           </div>
     </div>
     <Logo />
+    <div className='Me'>
+    <img
+          className="myimg"
+          src={LogoS}
+          alt="JavaScript,  Developer"
+         />
+   
+         </div>
     </div>
     <Loader type="ball-clip-rotate-multiple"/>
     </>

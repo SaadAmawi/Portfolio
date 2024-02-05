@@ -3,13 +3,19 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faAws, faGitAlt, faJava, faPython, faReact, faUnity } from '@fortawesome/free-brands-svg-icons'
+import { faGitAlt, faReact, faUnity } from '@fortawesome/free-brands-svg-icons'
+import a1 from './java.png'
+import a2 from './python.png'
+import a3 from './aws.png'
+
+
 function About() {
+  
     const [letterClass, setLetterClass]=useState('text-animate')
     useEffect(() => {
         setTimeout(() => {
          return setLetterClass('text-animate-hover')
-       },3000)
+       },6000)
      }, [])
 
   
@@ -31,26 +37,26 @@ function About() {
       <div className='stage-cube-cont'>
         <div className='cubespinner'>
             <div className='face1'>
-                <FontAwesomeIcon icon={faJava}  />
+            <img src={a1} className='java' width={150} alt='website'></img>
             </div>
             <div className='face2'>
                 <FontAwesomeIcon icon={faReact}  />
             </div>
             <div className='face3'>
-                <FontAwesomeIcon icon={faAws}  />
+            <img src={a3} className='aws' width={155} alt='website'></img>
             </div>
             <div className='face4'>
                 <FontAwesomeIcon icon={faUnity}  />
             </div>
             <div className='face5'>
-                <FontAwesomeIcon icon={faPython}  />
+            <img src={a2} className='python'width={250} alt='website'></img>
             </div>
             <div className='face6'>
                 <FontAwesomeIcon icon={faGitAlt} />
             </div>
         </div>
       </div>
-    </div>
+      </div>
     <Loader type="ball-clip-rotate-multiple"/>
     </>
   )

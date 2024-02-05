@@ -1,7 +1,7 @@
 .text-animate{
     display: inline-block;
     opacity: 1;
-    animation: fadeIn 1.3s ;
+    animation: zoomInDown 1.3s ;
     // animation: zoomInDown 1s 1s;
     animation-fill-mode: backwards;
     min-width: 10px;
@@ -13,7 +13,7 @@
 
     &:hover{
         animation: heartBeat 2s;
-        
+            
     }
 }
 
