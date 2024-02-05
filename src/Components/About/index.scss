@@ -7,7 +7,7 @@
     position: absolute;
     right: 0;
     overflow: hidden;
-    animation: fadeInDownBig 1s 3.8s backwards;
+    animation: fadeInDownBig 1s 5.2s backwards;
   }
   
   .cubespinner {
@@ -94,6 +94,14 @@
 
   @media screen and (max-width: 1200px) {
 
+
+    .python{
+      width:180px;
+    }
+    .java,
+    .aws{
+      width:100px;
+    }
     .stage-cube-cont {
       width: 70%;
       height: 170%;
@@ -103,7 +111,7 @@
       align-items: center;
       left:0%;
       overflow: hidden;
-      animation: fadeInDownBig 1s 3.8s backwards;
+      animation: fadeInDownBig 1s 5.8s backwards;
       top: 0;
     }
     .cubespinner {

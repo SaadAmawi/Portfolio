@@ -17,7 +17,7 @@ function Contact() {
     useEffect(() => {
         setTimeout(() => {
          return setLetterClass('text-animate-hover')
-       },3000)
+       },6000)
      }, [])
      
      const sendEmail = (e) => {

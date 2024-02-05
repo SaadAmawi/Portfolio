@@ -25,7 +25,7 @@
         display: block;
         clear: both;
         position: relative;
-        animation: fadeInUp 2s 2s;
+        animation: fadeInUp 2s 3s;
         animation-fill-mode: forwards;
       }
   
@@ -133,7 +133,7 @@
       width: 80%;
       background-color: #ffd700;
       text-align: left;
-      animation: zoomIn 1s 3s backwards;
+      animation: zoomIn 1s 4s backwards;
       
       svg{
         border: white solid 2px;
@@ -148,7 +148,7 @@
 
     .email{
       
-      animation: zoomIn 1s 3.5s backwards;
+      animation: zoomIn 1s 4.5s backwards;
       color: black;
       font-family: "Coolvetica";
       display: flex;
@@ -173,7 +173,7 @@
     }
     .location{
       color: black;
-      animation: zoomIn 1s 4s backwards;
+      animation: zoomIn 1s 5s backwards;
       text-align: left;
       display: flex;
       font-family: "Coolvetica";

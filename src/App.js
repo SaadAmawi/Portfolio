@@ -17,6 +17,21 @@ function App() {
  <Route path="skills" element={<Skills/>}/>
  </Route>
  </Routes>
+/* <>
+<Layout/>
+<div className='container home-page'>
+<Home/>
+</div>
+<div className='container about-page'>
+<About/>
+</div>
+<div className='container skills-page'>
+<Skills/>
+</div>
+<div className='container contact-page'>
+<Contact/>
+</div>
+</> */
   );
 }
 

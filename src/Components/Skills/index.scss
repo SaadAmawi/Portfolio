@@ -146,11 +146,15 @@ height: 250px;
          transform: none;
       }
    }}
+   .MemorEyez{
+      font-size: 20px;
+      margin-top: 20px;
+   }
    .website{
       display: flex;
       position: relative;
       width: 200px;
-      height: 114px;
+      height: 100px;
       margin-right: 20px;
       animation: fadeInRight 1.5s 3.5s backwards;
       transition: all 0.8s ease-out;
@@ -164,7 +168,7 @@ height: 250px;
       width: 200px;
       top:28%;
       float: left;
-      height: 114px;
+      height: 100px;
       animation: fadeInRight 1.5s 3.5s backwards;
       transition: all 0.8s ease-out;
    
@@ -220,7 +224,7 @@ height: 250px;
        color: white;
        font-family: "La Belle Aurore", cursive;
        animation: fadeIn 2s 3s backwards;
-       padding-top: 20%;
+       padding-top: 12%;
        left: -17px;
       
       h2{
@@ -260,7 +264,7 @@ height: 250px;
    display: block;
    width: fit-content;
    height: 350px;
-   top: 180px;
+   top: 150px;
    color: white;
    font-size: 22px;
    color: white;
@@ -276,7 +280,7 @@ height: 250px;
 .imgs{
    position: relative;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    &:hover{
       .uhealth1{
         transform: translateX(0%);

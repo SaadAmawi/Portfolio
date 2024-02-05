@@ -20,7 +20,7 @@ function Skills() {
     useEffect(() => {
         setTimeout(() => {
          return setLetterClass('text-animate-hover')
-       },5000)
+       },6000)
      }, [])
      
   return (
@@ -35,6 +35,7 @@ function Skills() {
             />
         </h1>
         </div>
+
       <div className='projects'>
         <div className='MemorEyez'>
             <h2>MemorEyez</h2>
