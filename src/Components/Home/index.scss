@@ -130,7 +130,10 @@ h2{
         background-color: #ffd700;
         color: #000a4d;
         transform:scale(1.05) ;
-
+        svg{
+            transition: ease-out .8s;
+            color:black;
+        }
     }
 //   &:hover{
 //     animation: none;
