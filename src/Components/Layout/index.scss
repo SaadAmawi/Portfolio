@@ -122,7 +122,7 @@
     font-family: 'Coolvetica';
     color: #ffd700;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 20px;
     position: relative;
     margin-bottom: 40px;
     left: -10px;
@@ -174,12 +174,14 @@
 .text-zone {
   position: absolute;
   left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-right:10px;
+  // top: 50%;
+  // transform: translateY(-50%);
   width: 35%;
+  height: 100%;
   vertical-align: middle;
   display: table-cell;
-  max-height: 90%;
+  max-height: 88%;
 }
 
 
@@ -273,9 +275,14 @@
       left: 10px;
       font-size: 32px;
     }
+    // .text-zone {
+    
+    //   margin-top: 200px;
+     
+    // }
   }
-  
 }
+
 
 @media screen and (max-width: 1200px) {
   .page {

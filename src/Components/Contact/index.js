@@ -23,7 +23,7 @@ function Contact() {
      const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_87y229o', 'template_p1fatx8', form.current, 'upnTvh5Krzt5CRnIB')
+      emailjs.sendForm('service_xfxr88t', 'template_p1fatx8', form.current, 'upnTvh5Krzt5CRnIB')
         .then(
           () => {
             alert("Email sent successfully!");
@@ -52,13 +52,13 @@ function Contact() {
                     <input type='text' name='from_name' placeholder='Name' required/>
                   </li>
                   <li className='half'>
-                    <input type='email' name='from_email' placeholder='Email' required/>
+                    <input type='email' name='from_email' placeholder='Your Email' required/>
                   </li>
-                  <li>
-                    <input placeholder='Subject' type='text' name='subject'/>
+                  <li className='half'>
+                    <input  placeholder='Subject' type='text' name='subject'/>
                   </li>
-                  <li>
-                  <textarea placeholder='Message' name='message' required/>
+                  <li className='half'>
+                  <textarea  placeholder='Message' name='message' required/>
                   </li>
                   <li>
                     <input type="submit" className='flat-button' value="SEND" />
@@ -67,16 +67,17 @@ function Contact() {
               </form>
             </div>
             </div>
-            <div className='my-info'>
+       
+        </div>
+        <div className='my-info'>
             <ul className='listss'>
-              <li className='num'><FontAwesomeIcon icon={faPhone}  /> &nbsp; +971 56 455 0990</li>
+              <li className='num' ><FontAwesomeIcon icon={faPhone}  /> &nbsp; +971 56 455 0990</li>
               <li className='email'><FontAwesomeIcon icon={faEnvelope}  /> &nbsp; saadamawi22@gmail.com</li>
               <li className='location'><FontAwesomeIcon icon={faLocation}  /> &nbsp; United Arab Emirates, Abu Dhabi</li>
             </ul>
 
 
   </div>
-        </div>
       </div>
 
       <Loader type="ball-clip-rotate-multiple"/>

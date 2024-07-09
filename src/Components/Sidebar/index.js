@@ -5,7 +5,7 @@ import name from "./0000.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 import { useState } from 'react'
-import pdf from './Resume.pdf'
+import pdf from './Saad Amawi Resume July2024.pdf'
 
 import {
     faLinkedin,

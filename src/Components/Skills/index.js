@@ -43,7 +43,7 @@ function Skills() {
                Immersive Application for Alzheimer’s and
                Dementia Patients
             </p>
-        <Link to='http://memor-eyez-webapp.s3-website.me-central-1.amazonaws.com/' className='link1' target='_blank'> 
+        <Link to='https://www.youtube.com/watch?v=gaavfCzvdOI' className='link1' target='_blank'> 
         <div className='move'>
         <img src={a4} className="apps" width={300} alt='app'></img>
         <img src={a1} className="website" width={300} alt='website'></img>
